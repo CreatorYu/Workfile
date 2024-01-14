@@ -1,10 +1,10 @@
-ACRL_withoutDPD = -1.*[30.393,30.047,21.662,27.762,28.194,28.616,29.079];
-ACLR_withDDRDPD = -1.*[46.876,44.548,41.744,37.158,41.256,39.100,37.396];
-ACLR_withRVTDFNNDPD = -1.*[44.495,44.990,41.628,43.115,39.387,42.254,41.473];
-ACLR_withARVTD_DNNDPD = -1.*[48.306,49.903,45.521,46.825,47.735,47.928,46.081];
+ACRL_withoutDPD = -1.*[24.632,24.141,24.700,25.261,25.276 ,25.705,26.026,28.751,28.549];
+ACLR_withDDRDPD = -1.*[47.558,47.710,45.637,43.771,43.728,42.073,40.741,42.559,41.185];
+ACLR_withRVTDFNNDPD = -1.*[47.860,47.453,46.311,45.583,45.102,43.837,43.864,45.299,42.910 ];
+ACLR_withARVTD_DNNDPD = -1.*[46.248,49.627,48.167, 50.099,48.127,47.348,48.720,46.586,48.374 ];
 
 figure(1);
-iteration = 80:20:200;
+iteration = 80:20:240;
 plot(iteration,ACRL_withoutDPD,'-ro','Linewidth', 2, 'MarkerSize', 8);
 hold on;
 plot(iteration,ACLR_withDDRDPD,'-c+','Linewidth', 2, 'MarkerSize', 8);
@@ -15,6 +15,7 @@ plot(iteration,ACLR_withARVTD_DNNDPD,'-m^','Linewidth', 2, 'MarkerSize', 8);
 hold off;
 grid on;
 legend("w/o DPD","DDR","RVTDFNN","PROPOSED");
-axis([80,210,-55,-15]);
+axis([80,250,-55,-10]);
 ylabel("ACLR(Low) /(dB)");
 xlabel("Bandwidth/(MHz)");
+title("ACLR(U)(dBc) v.s. BW(MHz)");
