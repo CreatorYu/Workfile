@@ -1,0 +1,42 @@
+Driver DPD Results 
+ DPD type =  RVTDFNN
+ Carrier Frequency = 2.400 GHz 
+ Signal BW = 160.000 MHz 
+ Signal Name (I) = 256QAM_160MHz_128r0_800r0_In_I_PAPR_9r1.txt
+ Signal Name (Q) = 256QAM_160MHz_128r0_800r0_In_Q_PAPR_9r1.txt
+ ESG/PSG Power = -26.000 
+ DPD sampling rate = 800.000 MHz 
+ DPD Iteration = 3.000 
+ 
+Without DPD Results 
+ EVM (%) = 11.399 
+ ACLR_L/ACLR_U = 22.923 / 25.407 
+ ACPR_L/ACPR_U = 26.747 / 28.905 
+ PAPRin = 7.671 
+ PAPRout = 7.934 
+ 
+With DPD Results 
+ EVM (%) = 19.648 
+ ACLR_L/ACLR_U = 44.475 / 45.102 
+ ACPR_L/ACPR_U = 44.647 / 45.722 
+ PAPRin = 7.022 
+ PAPRout = 7.459 
+ 
+Modeling Performance 
+ NMSE(dB) = -37.235 
+ DPD type =  RVTDFNN
+ hidensize of NN = Function of BP trainlm 
+ num of Time Delay Line 4.000000 
+ 
+With DPD Measurements
+Pout  = 29.121   dBm 
+Vdd   = 14.000   V
+Idd   = 142.900   mA
+DE    = 30.622  
+PAE   =        
+Without DPD Measurements
+Pout  = 29.090   dBm 
+Vdd   = 14.000   V
+Idd   = 134.400   mA
+DE    = 30.744  
+PAE   =        
