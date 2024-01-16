@@ -1,0 +1,46 @@
+Driver DPD Results 
+ DPD type =  MP
+ Carrier Frequency = 2.400 GHz 
+ Signal BW = 10.000 MHz 
+ Signal Name (I) = 256QAM_10MHz_8r0_50r0_In_I_PAPR_8r5.txt
+ Signal Name (Q) = 256QAM_10MHz_8r0_50r0_In_Q_PAPR_8r5.txt
+ ESG/PSG Power = -26.000 
+ DPD sampling rate = 50.000 MHz 
+ DPD Iteration = 2.000 
+ 
+Without DPD Results 
+ EVM (%) = 15.767 
+ ACLR_L/ACLR_U = 24.206 / 23.711 
+ ACPR_L/ACPR_U = 26.916 / 26.544 
+ PAPRin = 7.156 
+ PAPRout = 8.110 
+ 
+With DPD Results 
+ EVM (%) = 3.306 
+ ACLR_L/ACLR_U = 45.089 / 49.447 
+ ACPR_L/ACPR_U = 46.856 / 48.533 
+ PAPRin = 6.012 
+ PAPRout = 7.359 
+ 
+Modeling Performance 
+ NMSE(dB) = -38.177 
+ DPD type =  MP
+ NL = 7.000 
+ M = 1.000 
+ Type = odd_even
+ Number of coefficients = 8.000 
+ Coefficients DR = 82.158 
+ Conditioning Number = 939328.816 
+ 
+With DPD Measurements
+Pout  = 28.989   dBm 
+Vdd   = 14.000   V
+Idd   = 118.300   mA
+DE    = 28.979  
+PAE   =        
+Without DPD Measurements
+Pout  = 29.207   dBm 
+Vdd   = 14.000   V
+Idd   = 108.600   mA
+DE    = 30.833  
+PAE   =        

@@ -1,0 +1,42 @@
+Driver DPD Results 
+ DPD type =  Deep_NN
+ Carrier Frequency = 2.400 GHz 
+ Signal BW = 200.000 MHz 
+ Signal Name (I) = 256QAM_200MHz_160r0_1000r0_In_I_PAPR_8r5.txt
+ Signal Name (Q) = 256QAM_200MHz_160r0_1000r0_In_Q_PAPR_8r5.txt
+ ESG/PSG Power = -26.000 
+ DPD sampling rate = 1000.000 MHz 
+ DPD Iteration = 4.000 
+ 
+Without DPD Results 
+ EVM (%) = 19.128 
+ ACLR_L/ACLR_U = 20.327 / 24.828 
+ ACPR_L/ACPR_U = 23.807 / 26.765 
+ PAPRin = 7.156 
+ PAPRout = 8.296 
+ 
+With DPD Results 
+ EVM (%) = 1.771 
+ ACLR_L/ACLR_U = 43.502 / 45.956 
+ ACPR_L/ACPR_U = 43.368 / 46.208 
+ PAPRin = 5.664 
+ PAPRout = 7.304 
+ 
+Modeling Performance 
+ NMSE(dB) = -38.901 
+ DPD type =  Deep_NN
+ hidensize of NN = Function of BP trainlm 
+ num of Time Delay Line 4.000000 
+ num of weights and bias = 
+With DPD Measurements
+Pout  = 28.004   dBm 
+Vdd   = 14.000   V
+Idd   = 111.800   mA
+DE    = 24.869  
+PAE   =        
+Without DPD Measurements
+Pout  = 28.379   dBm 
+Vdd   = 14.000   V
+Idd   = 102.900   mA
+DE    = 26.974  
+PAE   =        

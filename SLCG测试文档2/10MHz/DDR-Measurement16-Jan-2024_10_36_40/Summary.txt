@@ -1,0 +1,44 @@
+Driver DPD Results 
+ DPD type =  Volterra_DDR
+ Carrier Frequency = 2.400 GHz 
+ Signal BW = 10.000 MHz 
+ Signal Name (I) = 256QAM_10MHz_8r0_50r0_In_I_PAPR_8r5.txt
+ Signal Name (Q) = 256QAM_10MHz_8r0_50r0_In_Q_PAPR_8r5.txt
+ ESG/PSG Power = -26.000 
+ DPD sampling rate = 50.000 MHz 
+ DPD Iteration = 4.000 
+ 
+Without DPD Results 
+ EVM (%) = 15.433 
+ ACLR_L/ACLR_U = 24.483 / 23.946 
+ ACPR_L/ACPR_U = 27.137 / 26.798 
+ PAPRin = 7.156 
+ PAPRout = 7.966 
+ 
+With DPD Results 
+ EVM (%) = 1.119 
+ ACLR_L/ACLR_U = 52.269 / 51.347 
+ ACPR_L/ACPR_U = 51.788 / 51.520 
+ PAPRin = 5.844 
+ PAPRout = 7.087 
+ 
+Modeling Performance 
+ NMSE(dB) = -45.127 
+ DPD type =  Volterra_DDR
+ Static NL = 9.000 
+ Memory Orders = 7.000, 0.000, 5.000, 0.000, 3.000 
+ Number of coefficients = 32.000 
+ Coefficients DR = 146.742 
+ 
+With DPD Measurements
+Pout  = 29.089   dBm 
+Vdd   = 14.000   V
+Idd   = 120.600   mA
+DE    = 29.278  
+PAE   =        
+Without DPD Measurements
+Pout  = 29.292   dBm 
+Vdd   = 14.000   V
+Idd   = 110.700   mA
+DE    = 31.235  
+PAE   =        
