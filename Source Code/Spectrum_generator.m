@@ -58,5 +58,5 @@ function Spectrum_generator(Output_I_withoutDPD, Output_Q_withoutDPD,Output_I_wi
 %             set(PSDout_with_DNNDPD, 'Color', 'k', 'LineWidth', 1 ) ;
 %         PSDout_withARVTD_DNNDPD = plot(msspectrum(h, xout_withARVTD_DNNDPD,'CenterDC',Fs)) ;
 %             set(PSDout_withARVTD_DNNDPD, 'Color', 'm', 'LineWidth', 1 ) ;
-        legend( 'Without DPD' , 'RVTDFNN-DPD' , 'DDR-DPD' , 'DNN DPD' ,'PROPOSED DPD');
+        legend( 'w/o DPD' , 'ARVTDFNN' , 'DDR' , 'DNN' ,'PROPOSED');
         hold off
