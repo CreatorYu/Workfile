@@ -1,0 +1,28 @@
+; Top Design: "MyLibrary_lib:cell_6_Mircostrip_Component:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary_lib:cell_6_Mircostrip_Component:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+MTEE_ADS:Tee1  N__0 N__2 N__5 Subst="MSub1" W1=w mm W2=w mm W3=w mm 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=1.0 GHz Stop=2.0 GHz Step=0.0010 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:Term2  N__3 0 Num=2 Z=30+j*50 Ohm Noise=yes 
+Port:Term1  N__0 0 Num=1 Z=55-j*40 Ohm Noise=yes 
+
+;#@# autodisplay="S_Params_Quad_dB_Smith"
+model MSub1 MSUB H=0.508 mm Er=3.55 Mur=1 Cond=5.8e7 Hu=1e+33 mm T=0.035 mm TanD=0.0022 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__2 N__3 Subst="MSub1" W=w mm L=30.102800 mm Wall1=1.0E+30 um Wall2=1.0E+30 um Mod=1 
+MLIN2:TL2  N__5 0 Subst="MSub1" W=w mm L=11.785500 mm Wall1=1.0E+30 um Wall2=1.0E+30 um Mod=1 
+
+w=1.097530

@@ -1,0 +1,6 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE man_lib man_lib
+ASSIGN man_lib libMode shared
+DEFINE MyLibrary_lib ../MyWorkspace_wrk/MyLibrary_lib
+ASSIGN MyLibrary_lib libMode readOnly

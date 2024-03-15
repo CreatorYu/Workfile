@@ -1,0 +1,24 @@
+; Top Design: "man_lib:TL_Lib_shortstub:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:TL_Lib_shortstub:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+TLIN:TL1  N__1 0 Z=50.0 Ohm E=128.14 F=2.5 GHz 
+Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=2 GHz Stop=3 GHz Step=0.001 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+aele Zin1=zin(S11,PortZ1);
+Port:Term2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
+C:C1  N__0 0 C=1.0 pF 
+aele Zin2=zin(S22,PortZ2);
