@@ -1,13 +1,11 @@
-; Top Design: "man_lib:TL_Lib_shortstub:schematic"
+; Top Design: "man_lib:Matching_Q_ML:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:TL_Lib_shortstub:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
-TLIN:TL1  N__1 0 Z=50.0 Ohm E=128.14 F=2.5 GHz 
-Port:Term1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:Matching_Q_ML:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=2 GHz Stop=3 GHz Step=0.001 GHz 
+SweepPlan: SP1_stim Start=1.0 GHz Stop=4 GHz Step=0.001 GHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -18,7 +16,10 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-aele Zin1=zin(S11,PortZ1);
-Port:Term2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
-C:C1  N__0 0 C=1.0 pF 
-aele Zin2=zin(S22,PortZ2);
+Port:Term2  N__2 0 Num=2 Z=10-j*10 Ohm Noise=yes 
+Port:Term1  N__1 0 Num=1 Z=20-j*40 Ohm Noise=yes 
+
+;#@# autodisplay="S_Params_Quad_dB_Smith"
+TLIN:TL3  N__2 0 Z=50 Ohm E=14.49 F=2.4 GHz 
+TLIN:TL2  N__1 N__2 Z=50 Ohm E=37.78 F=2.4 GHz 
+TLIN:TL1  N__1 0 Z=50 Ohm E=76.49 F=2.4 GHz 
