@@ -1,5 +1,5 @@
 jobName=EmPpMsgs
 jobType=emprep
-designName=man_lib:quarter_wavelength_ML:layout
+designName=man_lib:Double_Branch_Matching_network_Layout:layout
 ruleFilePath=
 addInfo="EM preprocessor messages displayed as DRC errors"

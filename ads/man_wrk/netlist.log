@@ -1,11 +1,26 @@
-; Top Design: "man_lib:Matching_Q_ML:schematic"
+; Top Design: "man_lib:Double_Branch_Matching_Layout_co_simulation:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:Matching_Q_ML:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:Double_Branch_Matching_Layout_co_simulation:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: man_lib
+; Cell Name: Double_Branch_Matching_network_Layout
+; View Name: schematic
+define Double_Branch_Matching_network_Layout ( P1  P2  P3  P4 ) 
+parameters  w=1.64676 mm  L1=15.6077 mm  L2=7.9164 mm  L3=3.54623 mm 
+MLIN2:TL4  P1 N__8 Subst="MSub1" W=1.64676 mm L=0.01 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+model MSub1 MSUB H=0.508 mm Er=3.55 Mur=1 Cond=5.8e7 Hu=1e+33 mm T=0.035 mm TanD=0.0022 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL3  N__3 P4 Subst="MSub1" W=1.64676 mm L=3.54623 mm tune{ 1.518115 mm to 4.554345 mm by 0.01 mm } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL2  N__2 P3 Subst="MSub1" W=1.64676 mm L=15.6077 mm tune{ 8.01385 mm to 24.04155 mm by 0.01 mm } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL1  N__4 N__5 Subst="MSub1" W=1.64676 mm L=7.9164 mm tune{ 3.9582 mm to 11.8746 mm by 0.01 mm } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee2  N__5 N__9 N__3 Subst="MSub1" W1=1.64676 mm W2=1.64676 mm W3=1.64676 mm 
+MTEE_ADS:Tee1  N__8 N__4 N__2 Subst="MSub1" W1=1.64676 mm W2=1.64676 mm W3=1.64676 mm 
+MLIN2:TL5  N__9 P2 Subst="MSub1" W=1.64676 mm L=0.01 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+end Double_Branch_Matching_network_Layout
+
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=1.0 GHz Stop=4 GHz Step=0.001 GHz 
+SweepPlan: SP1_stim Start=1.0 GHz Stop=4 GHz Step=0.01 GHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -16,10 +31,6 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-Port:Term2  N__2 0 Num=2 Z=10-j*10 Ohm Noise=yes 
-Port:Term1  N__1 0 Num=1 Z=20-j*40 Ohm Noise=yes 
-
-;#@# autodisplay="S_Params_Quad_dB_Smith"
-TLIN:TL3  N__2 0 Z=50 Ohm E=14.49 F=2.4 GHz 
-TLIN:TL2  N__1 N__2 Z=50 Ohm E=37.78 F=2.4 GHz 
-TLIN:TL1  N__1 0 Z=50 Ohm E=76.49 F=2.4 GHz 
+Port:Term2  N__5 0 Num=2 Z=10-j*10 Ohm Noise=yes 
+Port:Term1  N__6 0 Num=1 Z=20-j*40 Ohm Noise=yes 
+Double_Branch_Matching_network_Layout:X1  N__6 N__5 0 0 w=1.64676 mm L1=15.6077 mm L2=7.9164 mm L3=3.54623 mm 

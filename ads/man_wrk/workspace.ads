@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="21" Version="100">
+<ADSWorkspace Revision="25" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -121,5 +121,18 @@
         <Data_Files Name="Matching_Q_ML_data\logFile.txt" />
         <Data_Display Name="Matching_Q_ML.dds" />
         <Substrate Name="man_lib:RF4.subst" />
+        <ConfigFile Name="linecalc.cfg" />
+        <Cell Name="man_lib:Double_Branch_Matching_Network" />
+        <Dataset Name="Double_Branch_Matching_Network.ds" />
+        <Data_Files Name="Double_Branch_Matching_Network.ds" />
+        <Data_Files Name="Double_Branch_Matching_Network_data\logFile.txt" />
+        <Data_Display Name="Double_Branch_Matching_Network.dds" />
+        <Cell Name="man_lib:Double_Branch_Matching_network_Layout" />
+        <Dataset Name="Double_Branch_Matching_network_Layout_MomUW.ds" />
+        <Data_Files Name="Double_Branch_Matching_network_Layout_MomUW.ds" />
+        <Dataset Name="Double_Branch_Matching_network_Layout_MomUW_a.ds" />
+        <Data_Files Name="Double_Branch_Matching_network_Layout_MomUW_a.ds" />
+        <Data_Display Name="Double_Branch_Matching_network_Layout.dds" />
+        <Cell Name="man_lib:Double_Branch_Matching_Layout_co_simulation" />
     </Workspace>
 </ADSWorkspace>
