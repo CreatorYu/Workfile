@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+    <parameter name="w" value="1.64676 mm"/>
+    <parameter name="L1" value="15.6077 mm"/>
+    <parameter name="L2" value="7.9164 mm"/>
+    <parameter name="L3" value="3.54623 mm"/>
+</parameters>

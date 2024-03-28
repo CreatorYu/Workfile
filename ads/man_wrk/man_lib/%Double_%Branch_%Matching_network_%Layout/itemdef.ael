@@ -1,0 +1,5 @@
+create_item("Double_Branch_Matching_network_Layout","Double_Branch_Matching_network_Layout","X",16,-1,NULL,"Component Parameters",NULL,"%43?global %;%d:%t %# %44?0%:%31?%C%:_net%c%;%;%e %b%r%8?%29?%:%30?%p %:%k%?[%1i]%;=%p %;%;%;%e%e","Double_Branch_Matching_network_Layout","%t%b%r%38?%:\n%30?%s%:%k%?[%1i]%;=%s%;%;%e%e%;","",3,NULL,0,
+create_parm("w","Subnetwork 1.64676 mm",66560,"StdFormSet",5,prm("StdForm","1.64676 mm")),
+create_parm("L1","Subnetwork 15.6077 mm",66560,"StdFormSet",5,prm("StdForm","15.6077 mm")),
+create_parm("L2","Subnetwork 7.9164 mm",66560,"StdFormSet",5,prm("StdForm","7.9164 mm")),
+create_parm("L3","Subnetwork 3.54623 mm",66560,"StdFormSet",5,prm("StdForm","3.54623 mm")));
