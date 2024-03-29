@@ -1,0 +1,19 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+Error detected by hpeesofsim during analysis.
+    Optimization Setup:
+        No optimization variable was found in the design.
+    To fix this problem:
+        From the schematic, specify at least one optimization variable from menu pick
+             'Simulate'->'Simulation Variables Setup...'
+
+
+-------------------------------------------------------------------------------
+Simulation finished with errors.
+-------------------------------------------------------------------------------
+
+Resource usage:
+  Total stopwatch time     =     0.28 seconds.
+

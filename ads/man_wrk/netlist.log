@@ -1,7 +1,7 @@
-; Top Design: "man_lib:Double_Branch_Matching_Layout_co_simulation:schematic"
+; Top Design: "man_lib:Double_Branch_Matching_Layout_co_simulation2:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:Double_Branch_Matching_Layout_co_simulation:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=yes TopDesignName="man_lib:Double_Branch_Matching_Layout_co_simulation2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: man_lib
 ; Cell Name: Double_Branch_Matching_network_Layout
 ; View Name: schematic
@@ -31,6 +31,24 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-Port:Term2  N__5 0 Num=2 Z=10-j*10 Ohm Noise=yes 
-Port:Term1  N__6 0 Num=1 Z=20-j*40 Ohm Noise=yes 
-Double_Branch_Matching_network_Layout:X1  N__6 N__5 0 0 w=1.64676 mm L1=15.6077 mm L2=7.9164 mm L3=3.54623 mm 
+Port:Term2  N__3 0 Num=2 Z=10-j*10 Ohm Noise=yes 
+Port:Term1  N__2 0 Num=1 Z=20-j*40 Ohm Noise=yes 
+
+L2=7.9164
+L3=3.54623
+w=1.64676
+L1=15.6077
+OptimGoal:OptimGoal1 Expr="dB(S(1,1))" SimInstanceName="SP1" Weight=1.0 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal1_limit1" 
+SpecLimitLine:"OptimGoal1_limit1" Type="LessThan" Max=0.0 Weight=1.0 \
+IndepVar[1]="freq" IndepMin[1]=2.4e+09 IndepMax[1]=2.6e+09 
+OptimGoal:OptimGoal2 Expr="dB(S(2,1))" SimInstanceName="SP1" Weight=1.0 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal2_limit1" 
+SpecLimitLine:"OptimGoal2_limit1" Type="LessThan" Max=0.0 Weight=1.0 \
+IndepVar[1]="freq" IndepMin[1]=2.4e+09 IndepMax[1]=2.6e+09 
+
+Optim:"Optim1" OptimType="random" ErrorForm="L2" MaxIters=100 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTempControlMode=0 NumShootsPerIter=20 EnableCockpit=yes NormalizeError=yes SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
+
+Double_Branch_Matching_network_Layout:X1  N__2 N__3 0 0 w=w mm L1=L1 mm L2=L2 mm L3=L3 mm 
