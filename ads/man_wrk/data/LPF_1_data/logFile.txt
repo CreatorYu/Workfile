@@ -7,5 +7,5 @@ SP SP1[1] <man_lib:LPF_1:schematic>   freq=(0 Hz->5 GHz)
 
 
 Resource usage:
-  Total stopwatch time     =     0.33 seconds.
+  Total stopwatch time     =     0.31 seconds.
 

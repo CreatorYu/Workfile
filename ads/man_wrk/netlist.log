@@ -1,7 +1,12 @@
-; Top Design: "man_lib:Step_im_lpf:schematic"
+; Top Design: "man_lib:Step_im_LFP_co:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:Step_im_lpf:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:Step_im_LFP_co:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: man_lib
+; Cell Name: Step_im_lpf
+; View Name: schematic
+define Step_im_lpf ( P1  P2 ) 
+;parameters 
 model MSub1 MSUB H=1.58 mm Er=4.2 Mur=1 Cond=5.88E+7 Hu=1.0e+003 mm T=0.035 mm TanD=0.002 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
 MLIN2:TL1  N__13 N__18 Subst="MSub1" W=W1 mm L=L1 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL2  N__11 N__20 Subst="MSub1" W=W2 mm L=L2 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
@@ -9,22 +14,22 @@ MLIN2:TL3  N__9 N__22 Subst="MSub1" W=W3 mm L=L3 mm Wall1=1.0E+30 mil Wall2=1.0E
 MLIN2:TL4  N__7 N__24 Subst="MSub1" W=W4 mm L=L4 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL5  N__5 N__26 Subst="MSub1" W=W5 mm L=L5 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MLIN2:TL6  N__3 N__28 Subst="MSub1" W=W6 mm L=L6 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
-MLIN2:TL7  N__1 N__0 Subst="MSub1" W=3.114 mm L=3 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL7  N__1 P2 Subst="MSub1" W=3.114 mm L=3 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 
-W1=11.2838 tune{ 0.38 to 11.3 by 1.12838 } opt{ 0.39 to 11.3 }
-W3=11.2838 tune{ 0.38 to 11.3 by 1.12838 } opt{ 0.39 to 11.3 }
-W5=11.2838 tune{ 0.38 to 11.3 by 1.12838 } opt{ 0.39 to 11.3 }
-W2=0.385241 opt{ 0.38 to 11.3 }
-W4=0.385241 opt{ 0.38 to 11.3 }
-W6=0.385241 opt{ 0.38 to 11.3 }
+W1=9.8 tune{ 0.38 to 11.3 by 0.5 } opt{ 0.39 to 11.3 }
+W3=7.8 tune{ 0.38 to 11.3 by 0.5 } opt{ 0.39 to 11.3 }
+W5=10.7838 tune{ 0.38 to 11.3 by 0.5 } opt{ 0.39 to 11.3 }
+W2=0.54 tune{ 0.38 to 11.3 by 0.02 } opt{ 0.38 to 11.3 }
+W4=0.38 tune{ 0.38 to 11.3 by 0.02 } opt{ 0.38 to 11.3 }
+W6=0.38 tune{ 0.38 to 11.3 by 0.02 } opt{ 0.38 to 11.3 }
 
-L1=2.066810 opt{ 1 to 3.5 }
-L6=2.459540 opt{ 1.5 to 3.5 }
-L5=5.636760 opt{ 4.5 to 8 }
-L4=9.180950 opt{ 8 to 10.5 }
-L3=7.700090 opt{ 6.3 to 9.2 }
-L2=6.721410 opt{ 5.2 to 8 }
-MLIN2:TL8  N__14 N__16 Subst="MSub1" W=3.114 mm L=3 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+L1=2.06681 tune{ 1 to 3.5 by 0.206681 } opt{ 1 to 3.5 }
+L6=2.45954 tune{ 1.5 to 3.5 by 0.245954 } opt{ 1.5 to 3.5 }
+L5=5.63676 tune{ 4.5 to 8 by 0.563676 } opt{ 4.5 to 8 }
+L4=9.18095 tune{ 8 to 10.5 by 0.918095 } opt{ 8 to 10.5 }
+L3=7.70009 tune{ 6.3 to 9.2 by 0.770009 } opt{ 6.3 to 9.2 }
+L2=6.72141 tune{ 5.2 to 8 by 0.672141 } opt{ 5.2 to 8 }
+MLIN2:TL8  P1 N__16 Subst="MSub1" W=3.114 mm L=3 mm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
 MSTEP:Step1  N__16 N__13 Subst="MSub1" W1=3.114 mm W2=W1 mil 
 MSTEP:Step2  N__18 N__11 Subst="MSub1" W1=W1 mm W2=W2 mm 
 MSTEP:Step3  N__20 N__9 Subst="MSub1" W1=W2 mm W2=W3 mm 
@@ -32,12 +37,29 @@ MSTEP:Step4  N__22 N__7 Subst="MSub1" W1=W3 mm W2=W4 mm
 MSTEP:Step5  N__24 N__5 Subst="MSub1" W1=W4 mm W2=W5 mm 
 MSTEP:Step6  N__26 N__3 Subst="MSub1" W1=W5 mm W2=W6 mm 
 MSTEP:Step7  N__28 N__1 Subst="MSub1" W1=W6 mm W2=3.114 mm 
-Port:TermG1  N__14 0 Num=1 Z=50 Ohm Noise=yes 
-Port:TermG2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
 SweepPlan: SP1_stim Start=0 GHz Stop=5 GHz Step=0.001 GHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+end Step_im_lpf
+
+Step_im_lpf:X1  N__1 N__0 
+Port:TermG1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0 GHz Stop=5 GHz Step=0.01 GHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \

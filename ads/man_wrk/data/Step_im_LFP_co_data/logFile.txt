@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+
+SP X1.SP1[1] <man_lib:Step_im_LFP_co:schematic>   freq=(0 Hz->5 GHz)
+Warning detected by hpeesofsim during SP analysis 'X1.SP1'.
+    Value(0.035238) <= MinLegalValue(0.100000) OR Value >= MaxLegalValue(10.000000) for 'W2/W1' in `X1.Step6'
+
+
+
+SP SP1[1] <man_lib:Step_im_LFP_co:schematic>   freq=(0 Hz->5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     1.33 seconds.
+

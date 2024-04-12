@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="25" Version="100">
+<ADSWorkspace Revision="26" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -134,5 +134,39 @@
         <Data_Files Name="Double_Branch_Matching_network_Layout_MomUW_a.ds" />
         <Data_Display Name="Double_Branch_Matching_network_Layout.dds" />
         <Cell Name="man_lib:Double_Branch_Matching_Layout_co_simulation" />
+        <Data_Display Name="Double_Branch_Matching_Layout_co_simulation.dds" />
+        <Data_Display Name="Double_Branch_Matching_Layout_co_simulation2.dds" />
+        <Dataset Name="Double_Branch_Matching_Layout_co_simulation.ds" />
+        <Dataset Name="Double_Branch_Matching_Layout_co_simulation2.ds" />
+        <Data_Files Name="Double_Branch_Matching_Layout_co_simulation.ds" />
+        <Data_Files Name="Double_Branch_Matching_Layout_co_simulation2.ds" />
+        <Data_Files Name="Double_Branch_Matching_Layout_co_simulation2_data\logFile.txt" />
+        <Data_Files Name="Double_Branch_Matching_Layout_co_simulation_data\logFile.txt" />
+        <Cell Name="man_lib:Double_Branch_Matching_Layout_co_simulation2" />
+        <Cell Name="man_lib:Filter_one step" />
+        <Dataset Name="Filter_one_step.ds" />
+        <Data_Files Name="Filter_one_step.ds" />
+        <Data_Files Name="Filter_one_step_data\logFile.txt" />
+        <Data_Display Name="Filter_one step.dds" />
+        <Cell Name="man_lib:LPF_1" />
+        <Dataset Name="LPF_1.ds" />
+        <Data_Files Name="LPF_1.ds" />
+        <Data_Files Name="LPF_1_data\logFile.txt" />
+        <Data_Display Name="LPF_1.dds" />
+        <Cell Name="man_lib:LPF_mirco" />
+        <Cell Name="man_lib:DA_LCLowpassDT_LPF_mirco" />
+        <Cell Name="man_lib:DA_LCLowpassDT1_LPF_mirco" />
+        <Dataset Name="SA_LCLowpassDT1_LPF_mirco.ds" />
+        <Data_Files Name="SA_LCLowpassDT1_LPF_mirco.ds" />
+        <Data_Files Name="SA_LCLowpassDT1_LPF_mirco_data\logFile.txt" />
+        <Dataset Name="LPF_mirco.ds" />
+        <Data_Files Name="LPF_mirco.ds" />
+        <Data_Files Name="LPF_mirco_data\logFile.txt" />
+        <Data_Display Name="LPF_mirco.dds" />
+        <Cell Name="man_lib:Step_im_lpf" />
+        <Data_Files Name="Step_im_lpf_data\logFile.txt" />
+        <Dataset Name="Step_im_lpf.ds" />
+        <Data_Files Name="Step_im_lpf.ds" />
+        <Data_Display Name="Step_im_lpf.dds" />
     </Workspace>
 </ADSWorkspace>
