@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="26" Version="100">
+<ADSWorkspace Revision="27" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -168,5 +168,40 @@
         <Dataset Name="Step_im_lpf.ds" />
         <Data_Files Name="Step_im_lpf.ds" />
         <Data_Display Name="Step_im_lpf.dds" />
+        <Data_Display Name="Ideal_couple.dds" />
+        <Data_Display Name="Step_im_LFP_co.dds" />
+        <Dataset Name="Ideal_couple.ds" />
+        <Dataset Name="Step_im_LFP_co.ds" />
+        <Dataset Name="Step_im_lpf_MomUW.ds" />
+        <Dataset Name="Step_im_lpf_MomUW_a.ds" />
+        <Data_Files Name="Ideal_couple.ds" />
+        <Data_Files Name="Ideal_couple_data\logFile.txt" />
+        <Data_Files Name="Step_im_LFP_co.ds" />
+        <Data_Files Name="Step_im_LFP_co_data\logFile.txt" />
+        <Data_Files Name="Step_im_lpf_MomUW.ds" />
+        <Data_Files Name="Step_im_lpf_MomUW_a.ds" />
+        <Cell Name="man_lib:Ideal_couple" />
+        <Cell Name="man_lib:Step_im_LFP_co" />
+        <Cell Name="man_lib:BL_coupler_norminal" />
+        <Dataset Name="BL_coupler_norminal.ds" />
+        <Data_Files Name="BL_coupler_norminal.ds" />
+        <Data_Files Name="BL_coupler_norminal_data\logFile.txt" />
+        <Data_Display Name="BL_coupler_norminal.dds" />
+        <Cell Name="man_lib:BL_coupler _optimization" />
+        <Dataset Name="BL_coupler__optimization.ds" />
+        <Data_Files Name="BL_coupler__optimization.ds" />
+        <Data_Display Name="BL_coupler _optimization.dds" />
+        <Data_Files Name="BL_coupler__optimization_data\logFile.txt" />
+        <Cell Name="man_lib:sub_ BL_coupler _optimization" />
+        <Cell Name="man_lib:layout_ BL_coupler _optimization" />
+        <Dataset Name="layout__BL_coupler__optimization_MomUW.ds" />
+        <Data_Files Name="layout__BL_coupler__optimization_MomUW.ds" />
+        <Dataset Name="layout__BL_coupler__optimization_MomUW_a.ds" />
+        <Data_Files Name="layout__BL_coupler__optimization_MomUW_a.ds" />
+        <Data_Display Name="layout_ BL_coupler _optimization.dds" />
+        <Log Name="momServer.log" />
+        <Dataset Name="layout_sim_BL_coupler__optimization.ds" />
+        <Data_Files Name="layout_sim_BL_coupler__optimization.ds" />
+        <Data_Files Name="layout_sim_BL_coupler__optimization_data\logFile.txt" />
     </Workspace>
 </ADSWorkspace>

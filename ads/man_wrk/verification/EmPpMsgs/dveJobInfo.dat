@@ -1,5 +1,5 @@
 jobName=EmPpMsgs
 jobType=emprep
-designName=man_lib:Step_im_lpf:layout
+designName=man_lib:layout_ BL_coupler _optimization:layout_hpeesofsim
 ruleFilePath=
 addInfo="EM preprocessor messages displayed as DRC errors"

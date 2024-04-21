@@ -1,0 +1,84 @@
+License checkout took 0.026 sec
+License checkout took 0.006 sec
+Momentum MomEngine_64 2020.00.283 (*) built: Jul 17 2019
+Copyright  1992 - 2019 Keysight Technologies
+Simulation started on: Thu Apr 18 16:54:51 2024
+Simulation Mode: uW
+Substrate to be computed from 3.1 GHz to 3.9 GHz!
+Substrate calculation started
+.........|.........|.........|.........| 
+Substrate calculation finished
+Using the minimal snap distance of 0.004 mil
+(4 layout resolution points) for layout healing.
+
+--- WARNING -------------------------------------------------------------------
+
+Layout healing changed the layout. The actual
+highest aggregate snap distance was 0.001 mil.
+Further details have been written to the DRC
+report.
+
+-------------------------------------------------------------------------------
+Layout simplification started
+.........|.........|.........|.........| 
+Layout simplification finished
+Generating mesh at 3.9 GHz...
+S-parameter simulation
+S-parameter simulation started
+...initializing
+...extracting layout
+...expanding thick conductors
+...analyzing ports
+...reducing mesh
+Automatic selection: direct dense matrix solver
+Using multi-threading (12 threads)
+Matrix size: 1116 (reduced: 1056)
+Simulation temperature: 298.15 K
+Adaptive frequency sweep started
+Simulation frequency [1] = 3.1 GHz
+...loading Green functions
+...creating Basis sections
+...allocating interaction matrix
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [2] = 3.9 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+...calculating S-parameters
+Adaptive:   0.0 % of frequency range covered
+Simulation frequency [3] = 3.63333 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [4] = 3.36667 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+...calculating S-parameters
+Simulation frequency [5] = 3.18889 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+...calculating S-parameters
+Adaptive: 100.0 % of frequency range covered
+S-parameter simulation finished
+Simulation finished on: Thu Apr 18 16:54:57 2024
+The simulation results have been saved in dataset "layout__BL_coupler__optimization_MomUW".

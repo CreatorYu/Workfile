@@ -1,0 +1,318 @@
+<emDataViewDatabaseIndex>
+  <version major="1" minor="1"/>
+  <emDatabase>
+    <ParameterNames>
+      <parameterName>l1</parameterName>
+      <parameterName>l2</parameterName>
+      <parameterName>w1</parameterName>
+      <parameterName>w2</parameterName>
+      <parameterName>w3</parameterName>
+    </ParameterNames>
+    <databaseItems>
+      <databaseItem index="2" name="data.002">
+        <parameterValues>
+          <value>12.5631 mm</value>
+          <value>11.6812 mm</value>
+          <value>1.09813 mm</value>
+          <value>1.86728 mm</value>
+          <value>1.09813 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.002.sio</name>
+          <name>data.002.sam</name>
+          <name>data.002.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="3" name="data.003">
+        <parameterValues>
+          <value>12.922504 mm</value>
+          <value>12.6055882 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.003.sio</name>
+          <name>data.003.sam</name>
+          <name>data.003.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="4" name="data.004">
+        <parameterValues>
+          <value>12.9224786 mm</value>
+          <value>12.6055882 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.004.sio</name>
+          <name>data.004.sam</name>
+          <name>data.004.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="5" name="data.005">
+        <parameterValues>
+          <value>12.922504 mm</value>
+          <value>12.6055628 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.005.sio</name>
+          <name>data.005.sam</name>
+          <name>data.005.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="6" name="data.006">
+        <parameterValues>
+          <value>13.0696208 mm</value>
+          <value>12.5641354 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.006.sio</name>
+          <name>data.006.sam</name>
+          <name>data.006.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="7" name="data.007">
+        <parameterValues>
+          <value>13.3631686 mm</value>
+          <value>12.481179 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.007.sio</name>
+          <name>data.007.sam</name>
+          <name>data.007.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="8" name="data.008">
+        <parameterValues>
+          <value>14.2339568 mm</value>
+          <value>12.232386 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.008.sio</name>
+          <name>data.008.sam</name>
+          <name>data.008.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="9" name="data.009">
+        <parameterValues>
+          <value>16.6551864 mm</value>
+          <value>11.4889026 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.009.sio</name>
+          <name>data.009.sam</name>
+          <name>data.009.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="10" name="data.010">
+        <parameterValues>
+          <value>19.9771762 mm</value>
+          <value>9.347327 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.010.sio</name>
+          <name>data.010.sam</name>
+          <name>data.010.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="11" name="data.011">
+        <parameterValues>
+          <value>5.055235 mm</value>
+          <value>5.2169568 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.011.sio</name>
+          <name>data.011.sam</name>
+          <name>data.011.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="12" name="data.012">
+        <parameterValues>
+          <value>19.242532 mm</value>
+          <value>8.6479126 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.012.sio</name>
+          <name>data.012.sam</name>
+          <name>data.012.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="13" name="data.013">
+        <parameterValues>
+          <value>19.9995028 mm</value>
+          <value>9.4751652 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.013.sio</name>
+          <name>data.013.sam</name>
+          <name>data.013.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="14" name="data.014">
+        <parameterValues>
+          <value>19.991451 mm</value>
+          <value>9.4054168 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.014.sio</name>
+          <name>data.014.sam</name>
+          <name>data.014.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="15" name="data.015">
+        <parameterValues>
+          <value>19.9827134 mm</value>
+          <value>9.366758 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.015.sio</name>
+          <name>data.015.sam</name>
+          <name>data.015.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="16" name="data.016">
+        <parameterValues>
+          <value>19.973163 mm</value>
+          <value>9.3347794 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.016.sio</name>
+          <name>data.016.sam</name>
+          <name>data.016.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+      <databaseItem index="17" name="data.017">
+        <parameterValues>
+          <value>19.9771254 mm</value>
+          <value>9.347327 mm</value>
+          <value>1.0981182 mm</value>
+          <value>1.867281 mm</value>
+          <value>1.0981182 mm</value>
+        </parameterValues>
+        <fileNames>
+          <name>data.017.sio</name>
+          <name>data.017.sam</name>
+          <name>data.017.log.zip</name>
+        </fileNames>
+        <originalFileNames>
+          <name>proj.sio</name>
+          <name>proj.sam</name>
+          <name>proj.log.zip</name>
+        </originalFileNames>
+      </databaseItem>
+    </databaseItems>
+  </emDatabase>
+</emDataViewDatabaseIndex>
