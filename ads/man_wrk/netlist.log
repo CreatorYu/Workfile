@@ -1,13 +1,43 @@
-; Top Design: "man_lib:3dB_Wilkinson_Divider_ideal_TL:schematic"
+; Top Design: "man_lib:3dB_Wilkinson_Divider_Microstrip:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:3dB_Wilkinson_Divider_ideal_TL:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
-Port:Term2  N__8 0 Num=2 Z=50 Ohm Noise=yes 
-Port:Term1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:3dB_Wilkinson_Divider_Microstrip:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:TermG1  N__0 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__3 0 Num=2 Z=50 Ohm Noise=yes 
+MLIN2:TL1  N__0 N__1 Subst="MSub1" W=w1 mm L=2.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+model MSub1 MSUB H=0.8 mm Er=4.3 Mur=1 Cond=4.1e7 Hu=3.9e+34 mm T=10 um TanD=0.02 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MCURVE:Curve5  N__5 N__4 Subst="MSub1" W=w1 mm Angle=90 Radius=2.5 mm 
+MTEE_ADS:Tee1  N__10 N__14 N__1 Subst="MSub1" W1=w2 mm W2=w3 mm W3=w1 mm 
+MLIN2:TL2  N__9 N__10 Subst="MSub1" W=w2 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  N__11 N__12 Subst="MSub1" W=w2 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL4  N__13 N__17 Subst="MSub1" W=w2 mm L=22.64 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve1  N__11 N__9 Subst="MSub1" W=w2 mm Angle=90 Radius=2.5 mm 
+MCURVE:Curve2  N__13 N__12 Subst="MSub1" W=w2 mm Angle=90 Radius=2.5 mm 
+MTEE_ADS:Tee2  N__29 N__17 N__2 Subst="MSub1" W1=0.348211 mm W2=w2 mm W3=w1 mm 
+MTEE_ADS:Tee3  N__20 N__30 N__6 Subst="MSub1" W1=w3 mm W2=0.348211 mm W3=w1 mm 
+MLIN2:TL5  N__19 N__14 Subst="MSub1" W=w3 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__16 N__20 Subst="MSub1" W=w3 mm L=22.64 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL7  N__21 N__23 Subst="MSub1" W=w3 mm L=10 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve3  N__19 N__23 Subst="MSub1" W=w3 mm Angle=90 Radius=2.5 mm 
+MCURVE:Curve4  N__21 N__16 Subst="MSub1" W=w3 mm Angle=90 Radius=2.5 mm 
+MLIN2:TL8  N__2 N__5 Subst="MSub1" W=w1 mm L=5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL9  N__6 N__24 Subst="MSub1" W=w1 mm L=5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve6  N__15 N__24 Subst="MSub1" W=w1 mm Angle=90 Radius=2.5 mm 
+MLIN2:TL10  N__7 N__4 Subst="MSub1" W=w1 mm L=5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve7  N__28 N__7 Subst="MSub1" W=0.625 mm Angle=90 Radius=2.5 mm 
+MLIN2:TL11  N__28 N__3 Subst="MSub1" W=w1 mm L=5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL12  N__8 N__26 Subst="MSub1" W=w1 mm L=5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL13  N__31 N__15 Subst="MSub1" W=w1 mm L=5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MCURVE:Curve8  N__31 N__26 Subst="MSub1" W=w1 mm Angle=90 Radius=2.5 mm 
+
+w1=1.542810
+w2=0.810016
+w3=0.810016
+R:R1  N__29 N__30 R=100 Ohm Noise=yes 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=0.001 GHz Stop=2 GHz Step=0.001 GHz 
+SweepPlan: SP1_stim Start=0.01 GHz Stop=2 GHz Step=0.001 GHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -18,8 +48,4 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-Port:Term3  N__1 0 Num=3 Z=50 Ohm Noise=yes 
-TLIN:TL1  N__2 N__6 Z=50.0 Ohm E=10 F=1 GHz 
-TLIN:TL2  N__6 N__8 Z=(50.0*sqrt(2)) Ohm E=90 F=1 GHz 
-TLIN:TL3  N__6 N__1 Z=(50.0*sqrt(2)) Ohm E=90 F=1 GHz 
-R:R1  N__8 N__1 R=100 Ohm Noise=yes 
+Port:TermG3  N__8 0 Num=3 Z=50 Ohm Noise=yes 

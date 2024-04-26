@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="36" Version="100">
+<ADSWorkspace Revision="38" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -218,9 +218,15 @@
             <Cell Name="man_lib:3dB_Wilkinson_Divider_ideal_TL" />
             <Data_Display Name="3dB_Wilkinson_Divider_ideal_TL.dds" />
             <Cell Name="man_lib:3dB_Wilkinson_Divider_Microstrip" />
+            <Data_Display Name="3dB_Wilkinson_Divider_Microstrip.dds" />
+            <Cell Name="man_lib:3dB_Wilkinson_Divider_autoDesign" />
         </Folder>
         <Dataset Name="_3dB_Wilkinson_Divider_ideal_TL.ds" />
         <Data_Files Name="_3dB_Wilkinson_Divider_ideal_TL.ds" />
         <Data_Files Name="_3dB_Wilkinson_Divider_ideal_TL_data\logFile.txt" />
+        <Preferences Name="man_lib_sch.prf" />
+        <Dataset Name="_3dB_Wilkinson_Divider_Microstrip.ds" />
+        <Data_Files Name="_3dB_Wilkinson_Divider_Microstrip.ds" />
+        <Data_Files Name="_3dB_Wilkinson_Divider_Microstrip_data\logFile.txt" />
     </Workspace>
 </ADSWorkspace>
