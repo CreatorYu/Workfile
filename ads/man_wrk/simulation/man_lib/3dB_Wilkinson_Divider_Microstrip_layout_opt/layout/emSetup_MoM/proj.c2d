@@ -1,0 +1,191 @@
+CITIFILE A.01.01
+#Momentum: B.2020.00.283 (*) built: Jul 17 2019 
+#Momentum Date and Time: Fri Apr 26 14:36:47 2024
+
+NAME PortSet1/TwoP5_Dsolver_data/first_odd_mode_is_1/most_even_mode_is_1/PMLG0/LS0
+
+
+CONSTANT NBR_OF_PORTS 5
+
+VAR freq MAG 4
+
+DATA GAMMA_1[1] RI
+DATA Z0_1[1,1] RI
+DATA LAMBADAI_1[1,1] RI
+
+VAR_LIST_BEGIN
+	 900000000
+	 966666666.7
+	 1033333333
+	 1100000000
+VAR_LIST_END
+
+BEGIN
+	 0,	 28.96841351
+	 0,	 31.11422191
+	 0,	 33.26003032
+	 0,	 35.40583873
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+CITIFILE A.01.01
+NAME PortSet2/TwoP5_Dsolver_data/first_odd_mode_is_1/most_even_mode_is_1/PMLG0/LS0
+
+VAR freq MAG 4
+
+DATA GAMMA_2[1] RI
+DATA GAMMA_2[2] RI
+DATA Z0_2[1,1] RI
+DATA Z0_2[1,2] RI
+DATA Z0_2[2,1] RI
+DATA Z0_2[2,2] RI
+DATA LAMBADAI_2[1,1] RI
+DATA LAMBADAI_2[1,2] RI
+DATA LAMBADAI_2[2,1] RI
+DATA LAMBADAI_2[2,2] RI
+
+VAR_LIST_BEGIN
+	 900000000
+	 966666666.7
+	 1033333333
+	 1100000000
+VAR_LIST_END
+
+BEGIN
+	 0,	 28.96841351
+	 0,	 31.11422191
+	 0,	 33.26003032
+	 0,	 35.40583873
+END
+BEGIN
+	 0,	 28.96841351
+	 0,	 31.11422191
+	 0,	 33.26003032
+	 0,	 35.40583873
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+CITIFILE A.01.01
+NAME PortSet3/TwoP5_Dsolver_data/first_odd_mode_is_1/most_even_mode_is_1/PMLG0/LS0
+
+VAR freq MAG 4
+
+DATA GAMMA_3[1] RI
+DATA Z0_3[1,1] RI
+DATA LAMBADAI_3[1,1] RI
+
+VAR_LIST_BEGIN
+	 900000000
+	 966666666.7
+	 1033333333
+	 1100000000
+VAR_LIST_END
+
+BEGIN
+	 0,	 28.96841351
+	 0,	 31.11422191
+	 0,	 33.26003032
+	 0,	 35.40583873
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END
+CITIFILE A.01.01
+NAME PortSet4/TwoP5_Dsolver_data/first_odd_mode_is_1/most_even_mode_is_1/PMLG0/LS0
+
+VAR freq MAG 4
+
+DATA GAMMA_4[1] RI
+DATA Z0_4[1,1] RI
+DATA LAMBADAI_4[1,1] RI
+
+VAR_LIST_BEGIN
+	 900000000
+	 966666666.7
+	 1033333333
+	 1100000000
+VAR_LIST_END
+
+BEGIN
+	 0,	 28.96841351
+	 0,	 31.11422191
+	 0,	 33.26003032
+	 0,	 35.40583873
+END
+BEGIN
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+	 50 ,	 0 
+END
+BEGIN
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+	 0 ,	 0 
+END

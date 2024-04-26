@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="36" Version="100">
+<ADSWorkspace Revision="43" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -218,9 +218,26 @@
             <Cell Name="man_lib:3dB_Wilkinson_Divider_ideal_TL" />
             <Data_Display Name="3dB_Wilkinson_Divider_ideal_TL.dds" />
             <Cell Name="man_lib:3dB_Wilkinson_Divider_Microstrip" />
+            <Cell Name="man_lib:3dB_Wilkinson_Divider_Microstrip_layout" />
+            <Data_Display Name="3dB_Wilkinson_Divider_Microstrip.dds" />
+            <Cell Name="man_lib:3dB_Wilkinson_Divider_Microstrip_layout_opt" />
+            <Data_Display Name="3dB_Wilkinson_Divider_Microstrip_layout_opt.dds" />
+            <Cell Name="man_lib:co_simulation" />
+            <Data_Display Name="co_simulation.dds" />
         </Folder>
         <Dataset Name="_3dB_Wilkinson_Divider_ideal_TL.ds" />
         <Data_Files Name="_3dB_Wilkinson_Divider_ideal_TL.ds" />
         <Data_Files Name="_3dB_Wilkinson_Divider_ideal_TL_data\logFile.txt" />
+        <Preferences Name="man_lib_sch.prf" />
+        <Dataset Name="_3dB_Wilkinson_Divider_Microstrip.ds" />
+        <Data_Files Name="_3dB_Wilkinson_Divider_Microstrip.ds" />
+        <Data_Files Name="_3dB_Wilkinson_Divider_Microstrip_data\logFile.txt" />
+        <Dataset Name="_3dB_Wilkinson_Divider_Microstrip_layout_opt_MomUW.ds" />
+        <Data_Files Name="_3dB_Wilkinson_Divider_Microstrip_layout_opt_MomUW.ds" />
+        <Dataset Name="_3dB_Wilkinson_Divider_Microstrip_layout_opt_MomUW_a.ds" />
+        <Data_Files Name="_3dB_Wilkinson_Divider_Microstrip_layout_opt_MomUW_a.ds" />
+        <Dataset Name="co_simulation.ds" />
+        <Data_Files Name="co_simulation.ds" />
+        <Data_Files Name="co_simulation_data\logFile.txt" />
     </Workspace>
 </ADSWorkspace>
