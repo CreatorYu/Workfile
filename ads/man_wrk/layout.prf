@@ -139,7 +139,7 @@ genericArtworkSize 40.000000
 plotLessThanMinPixels 1
 plotDepthForLessThanMinPixels 2
 newRouteAroundInstText 0
-dsePrefLayoutLayer default
+dsePrefLayoutLayer default:drawing
 newRouteAroundInstSym 1
 onscreenCoordMode 2
 editInPlaceBoxColor 3

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ; Top Design: "man_lib:3dB_Wilkinson_Divider_Microstrip:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
@@ -38,6 +39,44 @@ S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=n
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
 SweepPlan: SP1_stim Start=0.01 GHz Stop=2 GHz Step=0.001 GHz 
+=======
+; Top Design: "man_lib:co_simulation:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="man_lib:co_simulation:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: man_lib
+; Cell Name: 3dB_Wilkinson_Divider_Microstrip_layout_opt
+; View Name: emModel
+define "3dB_Wilkinson_Divider_Microstrip_layout_opt" ( P1  P2  P3  P4  P5  Ref=0 ) 
+parameters  w2=0.776826   l=19  
+; MomCmpt model has node 0 as implicit reference. Ref node will be ignored and assumed to be grounded!
+em_data_name="man_lib:3dB_Wilkinson_Divider_Microstrip_layout_opt:emModel"
+em_data_p0="w2"
+em_data_v0=w2
+em_data_p1="l"
+em_data_v1=l
+MomCmpt:em_data  P1 P2 P3 P4 P5 \
+    name=em_data_name \
+    paramFile="" \
+    modelFile="C:/Users/abc/Desktop/workfile/ads/man_wrk/man_lib/3d%B_%Wilkinson_%Divider_%Microstrip_layout_opt/em%Model/model.ndx" \
+    p0="w2" v0=w2 v0_Resolution=1e-05 \
+    p1="l" v1=l v1_Resolution=1e-05 \
+    ModelReuse=1 \
+    ModelType="MOMMW" \
+    ExtrapolationMode="linear" \
+    EnforcePassivity=-1
+end "3dB_Wilkinson_Divider_Microstrip_layout_opt"
+
+"3dB_Wilkinson_Divider_Microstrip_layout_opt":X1  N__1 N__0 N__4 N__9 N__8 w2=0.776826  l=19  
+Port:TermG1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
+Port:TermG3  N__4 0 Num=3 Z=50 Ohm Noise=yes 
+R:R1  N__9 N__8 R=100 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.8 GHz Stop=01.2 GHz Step=0.001 GHz 
+>>>>>>> 83c7aebe2940f275656542734dea3ea4723a1bf3
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -48,4 +87,7 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+<<<<<<< HEAD
 Port:TermG3  N__8 0 Num=3 Z=50 Ohm Noise=yes 
+=======
+>>>>>>> 83c7aebe2940f275656542734dea3ea4723a1bf3

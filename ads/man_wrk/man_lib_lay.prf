@@ -4,11 +4,11 @@ textHeight 10.000000
 instNameLayerID silk_screen2:drawing
 instIDLayerID silk_screen:drawing
 instParam1LayerID 
-instTextHeight 10.000000
+instTextHeight 1.000000
 gridSnapX 5.000000
 gridSnapY 5.000000
 tapLength 25.000000
-portSize 40.000000
+portSize 1.000000
 minVertexDistance 0.000000
 unitsFreq 0
 unitsRes 1

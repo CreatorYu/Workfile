@@ -3,9 +3,145 @@ hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
     (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
 
 
+<<<<<<< HEAD
 SP SP1[1] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>   freq=(10 MHz->2 GHz)
 
 
 Resource usage:
   Total stopwatch time     =     0.48 seconds.
+=======
+OPTIM Optim1[1] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=(0->200)
+
+SP Optim1[1].SP1[0] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=0  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #0:
+  CurrentEF: 0.00254502621351317
+  Optimization variables:
+    l = 20
+    w2 = 810.016e-03
+
+SP Optim1[1].SP1[1] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=1  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #1:
+  CurrentEF: 0.00248479610641832
+  Optimization variables:
+    l = 19.98925463691328
+    w2 = 775.3322113944423e-03
+
+SP Optim1[1].SP1[2] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=2  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #2:
+  CurrentEF: 0.00247899045784569
+  Optimization variables:
+    l = 19.91774155483892
+    w2 = 765.0897116750568e-03
+
+SP Optim1[1].SP1[3] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=3  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #3:
+  CurrentEF: 0.00234348746295442
+  Optimization variables:
+    l = 19.00109068646095
+    w2 = 777.6786688171662e-03
+
+SP Optim1[1].SP1[4] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=4  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #4:
+  CurrentEF: 0.00234332222374093
+  Optimization variables:
+    l = 19.00001688073008
+    w2 = 776.9033736434657e-03
+
+SP Optim1[1].SP1[5] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=5  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #5:
+  CurrentEF: 0.00234332007607759
+  Optimization variables:
+    l = 19.0000013010161
+    w2 = 776.8269984090055e-03
+
+SP Optim1[1].SP1[6] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=6  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #6:
+  CurrentEF: 0.00234332002523498
+  Optimization variables:
+    l = 19.00000088125045
+    w2 = 776.8275552611128e-03
+
+SP Optim1[1].SP1[7] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=7  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #7:
+  CurrentEF: 0.00234331992095724
+  Optimization variables:
+    l = 19.00000001834561
+    w2 = 776.8278931709843e-03
+
+SP Optim1[1].SP1[8] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=8  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #8:
+  CurrentEF: 0.00234332001340313
+  Optimization variables:
+    l = 19.00000078388091
+    w2 = 776.8278718250421e-03
+
+SP Optim1[1].SP1[9] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=9  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #9:
+  CurrentEF: 0.00234331993255093
+  Optimization variables:
+    l = 19.00000001838272
+    w2 = 776.8146337022229e-03
+
+SP Optim1[1].SP1[10] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=10  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #10:
+  CurrentEF: 0.00234331992114935
+  Optimization variables:
+    l = 19.00000001445507
+    w2 = 776.8343199172344e-03
+
+SP Optim1[1].SP1[11] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=11  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #11:
+  CurrentEF: 0.00234331992001236
+  Optimization variables:
+    l = 19.00000001105276
+    w2 = 776.8282140088005e-03
+
+SP Optim1[1].SP1[12] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=12  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #12:
+  CurrentEF: 0.00234331992001236
+  Optimization variables:
+    l = 19.00000001635583
+    w2 = 776.8282140088005e-03
+
+SP Optim1[1].SP1[13] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=13  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #13:
+  CurrentEF: 0.0023433199197449
+  Optimization variables:
+    l = 19.00000000963265
+    w2 = 776.8288419729896e-03
+
+SP Optim1[1].SP1[14] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=14  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #14:
+  CurrentEF: 0.0023433199197449
+  Optimization variables:
+    l = 19.00000001270145
+    w2 = 776.8288419729896e-03
+
+SP Optim1[1].SP1[15] <man_lib:3dB_Wilkinson_Divider_Microstrip:schematic>  optIter=15  freq=(800 MHz->1.2 GHz)
+
+Iteration/Trial #15:
+  CurrentEF: 0.00234331991955667
+  Optimization variables:
+    l = 19.00000000032236
+    w2 = 776.8255560622603e-03
+Optim1[1] terminated due to no more improvement 
+
+Resource usage:
+  Total stopwatch time     =   145.90 seconds.
+>>>>>>> 83c7aebe2940f275656542734dea3ea4723a1bf3
 
