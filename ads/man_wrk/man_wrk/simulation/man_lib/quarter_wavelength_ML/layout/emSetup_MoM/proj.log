@@ -1,0 +1,63 @@
+License checkout took 0.025 sec
+License checkout took 0.007 sec
+Momentum MomEngine_64 2020.00.283 (*) built: Jul 17 2019
+Copyright  1992 - 2019 Keysight Technologies
+Simulation started on: Mon Mar 18 10:40:13 2024
+Simulation Mode: uW
+Substrate to be computed from 1 GHz to 3 GHz!
+Substrate calculation started
+.........|.........|.........|.........| 
+Substrate calculation finished
+Using the minimal snap distance of 0.004 mil
+(4 layout resolution points) for layout healing.
+Layout simplification started
+.........|.........|.........|.........| 
+Layout simplification finished
+Generating mesh at 3 GHz...
+S-parameter simulation
+S-parameter simulation started
+...initializing
+...extracting layout
+...expanding thick conductors
+...analyzing ports
+...reducing mesh
+Automatic selection: direct dense matrix solver
+Using multi-threading (12 threads)
+Matrix size: 234 (reduced: 224)
+Simulation temperature: 298.15 K
+Adaptive frequency sweep started
+Simulation frequency [1] = 1 GHz
+...loading Green functions
+...creating Basis sections
+...allocating interaction matrix
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [2] = 3 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Adaptive:   0.0 % of frequency range covered
+Simulation frequency [3] = 2.33333 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [4] = 1.66667 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Adaptive: 100.0 % of frequency range covered
+S-parameter simulation finished
+Simulation finished on: Mon Mar 18 10:40:16 2024
+The simulation results have been saved in dataset "quarter_wavelength_ML_MomUW".

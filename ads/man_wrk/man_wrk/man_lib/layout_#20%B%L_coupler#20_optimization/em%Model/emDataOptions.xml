@@ -1,0 +1,13 @@
+<emDataViewOptions>
+  <version major="1" minor="2"/>
+  <Options portTerminalPinsNetlistMode="Shorted" symbolNetlistMode="All pins" extrapolationMode="Linear" enforcePassivity="DuringExtrapolation"/>
+  <cellParameters useInterpolation="no">
+    <parameters>
+      <cellParameter name="l1" delta="15.1423 mil" resolution="0.001 mil"/>
+      <cellParameter name="l2" delta="15.1423 mil" resolution="0.001 mil"/>
+      <cellParameter name="w1" delta="15.1423 mil" resolution="0.001 mil"/>
+      <cellParameter name="w2" delta="15.1423 mil" resolution="0.001 mil"/>
+      <cellParameter name="w3" delta="15.1423 mil" resolution="0.001 mil"/>
+    </parameters>
+  </cellParameters>
+</emDataViewOptions>

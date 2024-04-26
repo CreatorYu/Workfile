@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 510.shp Jul 22 2019, MINT version 5
+    (64-bit windows built: Mon Jul 22, 2019 22:53:59 +0000)
+
+
+SP SP1[1] <man_lib:co_simulation:schematic>   freq=(800 MHz->1.2 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    COMPONENT `X1.em_data':
+       Simulator uses frequency lower than frequency range of model. The S-parameters are extrapolated.
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    COMPONENT `X1.em_data':
+       Simulator uses frequency higher than frequency range for model. The S-parameters are extrapolated.
+
+
+Resource usage:
+  Total stopwatch time     =     0.35 seconds.
+

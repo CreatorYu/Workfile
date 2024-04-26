@@ -1,0 +1,106 @@
+License checkout took 0.034 sec
+License checkout took 0.007 sec
+Momentum MomEngine_64 2020.00.283 (*) built: Jul 17 2019
+Copyright  1992 - 2019 Keysight Technologies
+Simulation started on: Fri Apr 26 14:36:46 2024
+Simulation Mode: uW
+Substrate valid
+Using the minimal snap distance of 0.004 mm
+(4 layout resolution points) for layout healing.
+
+--- WARNING -------------------------------------------------------------------
+
+Layout healing changed the layout. The actual
+highest aggregate snap distance was 0.001 mm.
+Further details have been written to the DRC
+report.
+
+-------------------------------------------------------------------------------
+Layout simplification started
+.........|.........|.........|.........| 
+Layout simplification finished
+
+--- WARNING -------------------------------------------------------------------
+
+The port setup needed to be corrected:
+TML calibration for port "P4" has been changed
+to TML (zero length) calibration because the
+transmission line of pin "P4" would otherwise
+intersect with the layout.
+
+-------------------------------------------------------------------------------
+
+--- WARNING -------------------------------------------------------------------
+
+The port setup needed to be corrected:
+TML calibration for port "P5" has been changed
+to TML (zero length) calibration because the
+transmission line of pin "P5" would otherwise
+intersect with the layout.
+
+-------------------------------------------------------------------------------
+Generating mesh at 1.1 GHz...
+S-parameter simulation
+S-parameter simulation started
+...initializing
+...extracting layout
+...expanding thick conductors
+...analyzing ports
+...reducing mesh
+Automatic selection: direct dense matrix solver
+Using multi-threading (12 threads)
+Matrix size: 1262 (reduced: 721)
+Simulation temperature: 298.15 K
+Adaptive frequency sweep started
+Simulation frequency [1] = 900 MHz
+...loading Green functions
+...creating Basis sections
+...allocating interaction matrix
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [2] = 1.1 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+.........|.........|.........|.........| 
+...calculating S-parameters
+Adaptive:   0.0 % of frequency range covered
+Simulation frequency [3] = 1.03333 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [4] = 966.667 MHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [5] = 1.07778 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calibrating ports
+.........|.........|.........|.........| 
+...calculating S-parameters
+Adaptive: 100.0 % of frequency range covered
+S-parameter simulation finished
+Simulation finished on: Fri Apr 26 14:36:55 2024
+The simulation results have been saved in dataset "_3dB_Wilkinson_Divider_Microstrip_layout_opt_MomUW".

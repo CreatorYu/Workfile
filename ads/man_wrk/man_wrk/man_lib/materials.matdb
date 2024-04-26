@@ -1,0 +1,17 @@
+<!DOCTYPE Materials>
+<Materials>
+    <Conductors>
+        <Conductor name="cond" imag="" tc2="" mur_imag="" tc1="" parmtype="1" real="5.8e+07 Siemens/m" electron_path="" thermal_conductivity_in_z="" heat_capacity="" tnom="" mur_real="1" thermal_conductivity=""/>
+        <Conductor name="cond_1" imag="" tc2="" mur_imag="" tc1="" parmtype="1" real="4.1e+07 Siemens/m" electron_path="" thermal_conductivity_in_z="" heat_capacity="" tnom="" mur_real="1" thermal_conductivity=""/>
+    </Conductors>
+    <Dielectrics>
+        <Dielectric name="Alumina" valuefreq="1 GHz" highfreq="1 THz" er_real="9.6" mur_imag="" loss_type="1" er_loss="" electron_path="" thermal_conductivity_in_z="" heat_capacity="1.73E+06" er_imag="" mur_real="1" thermal_conductivity="25.25" lowfreq="1 KHz"/>
+        <Dielectric name="AIR" valuefreq="" highfreq="" er_real="1" mur_imag="0" loss_type="0" er_loss="0" electron_path="" thermal_conductivity_in_z="" heat_capacity="" er_imag="" mur_real="1" thermal_conductivity="" lowfreq=""/>
+        <Dielectric name="Subst_1" valuefreq="" highfreq="" er_real="3.55" mur_imag="0" loss_type="0" er_loss="0.0022" electron_path="" thermal_conductivity_in_z="" heat_capacity="" er_imag="" mur_real="1" thermal_conductivity="" lowfreq=""/>
+        <Dielectric name="Rogers_RO4003" valuefreq="10.0 GHz" highfreq="1 THz" er_real="3.55" mur_imag="" loss_type="1" er_loss="0.0022" electron_path="" thermal_conductivity_in_z="" heat_capacity="" er_imag="" mur_real="1" thermal_conductivity="" lowfreq="1 KHz"/>
+        <Dielectric name="Subst_1_1" valuefreq="" highfreq="" er_real="4.3" mur_imag="0" loss_type="0" er_loss="0.02" electron_path="" thermal_conductivity_in_z="" heat_capacity="" er_imag="" mur_real="1" thermal_conductivity="" lowfreq=""/>
+        <Dielectric name="Dielectric_1" valuefreq="1 GHz" highfreq="1 THz" er_real="1" mur_imag="" loss_type="1" er_loss="" electron_path="" thermal_conductivity_in_z="" heat_capacity="" er_imag="" mur_real="1" thermal_conductivity="" lowfreq="1 KHz"/>
+    </Dielectrics>
+    <Semiconductors/>
+    <roughness/>
+</Materials>

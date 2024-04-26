@@ -1,0 +1,59 @@
+License checkout took 0.021 sec
+License checkout took 0.004 sec
+Momentum MomEngine_64 2020.00.283 (*) built: Jul 17 2019
+Copyright  1992 - 2019 Keysight Technologies
+Simulation started on: Fri Mar 15 15:03:17 2024
+Simulation Mode: uW
+Substrate valid
+Using the minimal snap distance of 0.004 mil
+(4 layout resolution points) for layout healing.
+Layout simplification started
+.........|.........|.........|.........| 
+Layout simplification finished
+Generating mesh at 2 GHz...
+S-parameter simulation
+S-parameter simulation started
+...initializing
+...extracting layout
+...analyzing ports
+...reducing mesh
+Automatic selection: direct dense matrix solver
+Using multi-threading (12 threads)
+Matrix size: 59 (reduced: 55)
+Simulation temperature: 298.15 K
+Adaptive frequency sweep started
+Simulation frequency [1] = 1 GHz
+...loading Green functions
+...creating Basis sections
+...allocating interaction matrix
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [2] = 2 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Adaptive:   0.0 % of frequency range covered
+Simulation frequency [3] = 1.66667 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Simulation frequency [4] = 1.33333 GHz
+...loading Green functions
+...loading interaction matrix
+.........|.........|.........|.........| 
+...solving interaction matrix
+.........|.........|.........|.........| 
+...calculating S-parameters
+Adaptive: 100.0 % of frequency range covered
+S-parameter simulation finished
+Simulation finished on: Fri Mar 15 15:03:18 2024
+The simulation results have been saved in dataset "cell_1_MomUW".
