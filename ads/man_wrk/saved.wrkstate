@@ -1,5 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows/>
+    <Windows>
+        <Schematic x1="605" width="921" height="825" view="schematic" y1="41" geom="1,0,1,605,41,921,825,1920,1080" lib="man_lib" cell="DA_SmithChartMatch1_Load"/>
+    </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>

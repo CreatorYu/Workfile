@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="43" Version="100">
+<ADSWorkspace Revision="45" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers_ic" />
@@ -239,5 +239,8 @@
         <Dataset Name="co_simulation.ds" />
         <Data_Files Name="co_simulation.ds" />
         <Data_Files Name="co_simulation_data\logFile.txt" />
+        <Folder Name="Midterm_project">
+            <Cell Name="man_lib:Load" />
+        </Folder>
     </Workspace>
 </ADSWorkspace>
