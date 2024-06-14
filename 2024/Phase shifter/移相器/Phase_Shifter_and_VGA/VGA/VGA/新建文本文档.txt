@@ -1,0 +1,5 @@
+2000_Broadband AlGaN GaN HEMT MMIC Attenuator with high dynamic range
+2020_A 24-30GHz GaN-on=Si Variable Gain low noise amplifier MMIC
+2013_AlGaN GaN based variable gain amplifiers for W band
+2019_GaN MMIC Differential Muti-function chip for Ka Band applications
+2015_A 10MHz-6GHz high power high linearity 35dB digital step attenuator MMIC using GaN HEMTs with TaON passivation
